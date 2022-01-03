@@ -1,0 +1,140 @@
+/*reset*/
+*{
+    box-sizing: border-box;
+    font: inherit;
+    color: inherit;
+}
+
+ /* variable */
+:root{
+    --text-color: #828282;
+    --border-color: #e0e0e0;
+    --primary-color: #2100cd;
+}
+  /* base styles */
+body{
+    font-family: 'lato',sans-serif ;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    background-image: url("dryleaf.jpg");
+    background-size: cover;
+} 
+  /* mobile styles */
+ 
+  #wrapper{
+      margin: 0 auto;
+      max-width: 1100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .panel{
+      margin-top: 50px;
+      background-color:#ffffff;
+      max-width: 550px;
+      width: 100%;
+      padding: 15px 25px;
+      border-radius: 8px;
+  }
+  .panel-heading{
+      font-size: 22px;
+      font-weight: 800;
+      margin: 0;
+
+  }
+  .panel-subheading{
+      font-size: 15px;
+      color: var(--text-color);
+  }
+  a{
+      text-decoration: none;
+      color: var(--primary-color);
+  }
+  .input{
+      margin-bottom: 8px;
+      position: relative;
+      
+  }
+  .input label{
+      font-size: 15px;
+      color: var(--text-color);
+      display: block
+
+  }
+  .input input{
+      border: none;
+      border-bottom: 1px solid var(--border-color);
+      outline: none;
+      width: 100%;
+      padding: 1px;
+  }
+  .input-indicator{
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      height: 1.20px;
+      width: 0;
+      transition: all 25ms ease-in-out;
+  }
+  .name{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+  }
+  .input input:focus ~ .input-indicator{
+    background-color: var(--primary-color);
+    width: 100%;
+    left: 0;
+  } 
+  .date-of-birth-heading{
+      font-size: 15px;
+      color: var(--text-color);
+      font-weight: 800;
+      margin-bottom: 8px;
+      margin: 0;
+
+  }
+  .dropdown label{
+    font-size: 15px;
+    color: var(--text-color);
+    display: block
+  }
+  .dropdown select{
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid var(--border-color);
+      padding: 0;
+      height: 30px;
+  }
+  .date-of-birth-input{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .consent{
+      font-size: 15px;
+      margin: 10px 0;
+      padding: 0;
+      color: var(--text-color);
+      margin-bottom: 20px;
+  }
+  button{
+      display: block;
+      margin: 0 auto;
+      padding: 10px 25px;
+      border: none;
+      background-color: var(--primary-color);
+      color: #ffffff;
+      border-radius: 10px;
+      
+  }
+  footer p{
+    background: #013856;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: -25px;
+    width: 100%;
+   
+  }

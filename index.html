@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mobile first responsive-2 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="panel-container">
+           <div class="panel">
+               <h1 class="panel-heading">Create an account</h1>
+               <p class = "panel-subheading">Already have an account ? <a href="">sign in</a> </p>
+               <form action="" onsubmit="alert('sussecc')">
+                   <div class="input">
+                       <label for="email-adress">Email Adress</label>
+                       <input type="emai" required id="email-adress">
+                       <div class="input-indicator"></div>
+                   </div>
+                   <div class="name">
+                   <div class="input">
+                    <label for="first-name">First Name</label>
+                    <input type="text" required id="first-name">
+                    <div class="input-indicator"></div>
+                </div>
+                <div class="input">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" required id="last-name">
+                    <div class="input-indicator"></div>
+                </div>
+            </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" required id="password">
+                    <div class="input-indicator"></div>
+                </div>
+                <div class="date-of-birth">
+                    <h6 class="date-of-birth-heading">Date of birth</h6>
+                    <div class="date-of-birth-input">
+                        <div class="dropdown">
+                            <label for="month">Month</label>
+                            <select name="month" id="month">
+                                <option value="January">January</option>
+                                <option value="february">february</option>
+                                <option value="march">march</option>
+                                <option value="april">april</option>
+                                <option value="May">May</option>
+                                <option value="june">june</option>
+                                <option value="july">july</option>
+                                <option value="August">August</option>
+                                <option value="September">September</option>
+                                <option value="October">October</option>
+                                <option value="Novenber">Novenber</option>
+                                <option value="December">December</option>
+                            </select>
+                        </div>
+                    <div class="input">
+                        <label for="Day">Day</label>
+                        <input type="number" required id="last-name" id="day">
+                    </div>
+                    <div class="input">
+                        <label for="year">Year</label>
+                        <input type="password" required id="email-adress" min="1900" max="2020">
+                    </div>
+                </div>
+                    </div>
+                <p class="consent">By clicking create account,I agree and have read the <a href="">terms of use</a> and <a href="">privacy policy</a> </p>
+                <button type="submit">Create Account</button>
+                </div>
+               </form>
+           </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2021 by <strong>Faruk Alam Hawlader</strong></p>
+    </footer>
+</body>
+</html>
